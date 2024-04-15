@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Tickets</title>
+</head>
+<body>
+<h1>Ваші квитки:</h1>
+<ul>
+  {% for ticket in user_tickets %}
+    <li>Назва - {{ ticket.title }}</li>
+    <li>Місце -{{ ticket.rows }}</li>
+    <li>Ряд - {{ ticket.columns }}</li>
+    <li>Дата - {{ ticket.date }}</li>
+    <br>
+    <br>
+  {% endfor %}
+</ul>
+</body>
+</html>
